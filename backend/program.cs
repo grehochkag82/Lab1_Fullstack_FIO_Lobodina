@@ -1,4 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Меня зовут Лободина В.А");
-Console.WriteLine(DateTime.Now);
+﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введите ваше имя: ");
+        string name = Console.ReadLine();
+        Console.WriteLine($"Привет, {name}!");
+    }
+}
