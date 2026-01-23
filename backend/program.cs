@@ -10,5 +10,21 @@ class Program
 
         DayOfWeek currentDay = DateTime.Now.DayOfWeek;
         Console.WriteLine($"Текущий день недели: {currentDay}");
+
+        Console.Write("Хотите продолжить? (y/n): ");
+        string answer = Console.ReadLine();
+        
+        if (answer.ToLower() == "y")
+        {
+            Console.WriteLine("Программа продолжает работу...");
+        }
+        else if (answer.ToLower() == "n")
+        {
+            Console.WriteLine("Программа завершена.");
+        }
+        else
+        {
+            Console.WriteLine("Некорректный ввод.");
+        }
     }
 }
