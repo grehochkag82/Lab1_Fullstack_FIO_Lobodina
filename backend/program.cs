@@ -8,6 +8,7 @@ class Program
         string name = Console.ReadLine();
         Console.WriteLine($"Привет, {name}!");
 
-       
+        DayOfWeek currentDay = DateTime.Now.DayOfWeek;
+        Console.WriteLine($"Текущий день недели: {currentDay}");
     }
 }
